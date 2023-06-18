@@ -1,0 +1,121 @@
+* {
+  margin: 0; /* внешний отсуп */
+  padding: 0; /* внутренний отсуп */
+
+  border: 0; /* обводка */
+}
+
+*,
+*:before,
+*:after {
+  /* меняет ширину блока что было удобно верстать */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* box-sizing: border-box - начинает включать в себя внутренний отступ и обводку */
+}
+
+:focus,
+:active {
+  /* убераем линии обводки у некоторых браузеров */
+  outline: none;
+}
+
+a:focus,
+a:active {
+  /* убераем линии обводки у некоторых браузеров */
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  /* делаем элементы блочными */
+  display: block;
+}
+
+html,
+body {
+  /* уравнивает ширфты и элементы для разынх браузеров (заприщают самовольное увеличение шрифта(пример))*/
+  width: 100%;
+  height: 100%;
+
+  font-size: 100%;
+  font-size: 14px;
+  line-height: 1;
+
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  /* наследование шрифта */
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  /*убирают крестик в internet explayer*/
+  display: none;
+}
+
+button {
+  /*убирают курсор при вводе текста*/
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  /* убирают лишние отступы в firefox для кнопок */
+  padding: 0;
+
+  border: 0;
+}
+a,
+a:visited {
+  /**/
+  text-decoration: none;
+}
+
+a:hover {
+  /**/
+  text-decoration: none;
+}
+
+ul li {
+  /**/
+  list-style: none;
+}
+
+img {
+  /**/
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* обнуляем заголовки h */
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.header {
+
+}
+.header__nav {
+  display: flex;
+  flex-direction: row;
+}
+.header__nav ul{
+  display: flex;
+  flex-direction: row;
+  margin: 0 20px;
+}
+.nav__links {
+  margin: 0 10px;
+}
